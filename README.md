@@ -27,11 +27,11 @@ The easiest way to download IIS builder is to just use the two Powershell comman
 As of v1.3.0 this command doesn't need to be ran within the web root as we can now supply a **-Path** argument. However feel free to download into the web root of your project if that is preferred. 
 
 ```powershell
-(new-object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/mattou07/iis-builder/master/IIS-Builder.ps1','IIS-Builder.ps1')
+(new-object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/pengbo-XUE/IIS-builder/master/IIS-Builder.ps1','IIS-Builder.ps1')
 ```
 The next command which downloads the JSON file **MUST** be ran inside your web root and committed into source control. This will allow others to share the same domains and enforce your best practices for your local domains on a project.
 ```powershell
-(new-object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/mattou07/iis-builder/master/iis-config.json','iis-config.json')
+(new-object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/pengbo-XUE/IIS-builder/master/iis-config.json','iis-config.json')
 ```
 The two commands will use **System.Net.WebClient** to download the needed files. Similar to wget in linux.
 
